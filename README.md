@@ -9,3 +9,10 @@
   --create
   ``` 
   creates a new topic named `updates`
+
+
+kafka-console-producer \
+--topic updates \
+--broker-list localhost:9092 \
+--property parse.key=true \
+--property key.separator=,
